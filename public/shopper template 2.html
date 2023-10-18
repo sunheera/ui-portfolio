@@ -1,0 +1,223 @@
+<!Doctype html>
+<html lang="en-in">
+    <head>
+        <title>shopper template</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            header
+            {
+                font-size:25px;
+                font-family:arial;
+                display:flex;
+                justify-content:space-between;
+                padding:15px;
+            }
+            .brand-title
+            {
+                font-size:30px;
+                font-weight:bold;
+            }
+            nav span{
+                margin-right:15px;
+            }
+            .cart-count
+            {
+                background-color:red;
+                color:white;
+                padding:3px;
+                width:25px;
+                display:inline-block;
+                border-radius:25px;
+                text-align:center;
+                font-size:15px;
+            }
+            article{
+                background-color:black;
+                text-align:center;
+                color:white;
+                font-size:20px;
+                padding:20px;
+            }
+            .bi-lightning-fill{
+                color:gold;
+            }
+            section{
+                height:600px;
+            }
+            footer{
+                display:grid;
+                grid-template-columns:2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+                padding:20px;
+                background-color:black;
+                color:white;
+                font-family:arial;
+            }
+            .footer-brand-name{
+                font-size:30px;
+                font-weight:bold;
+                margin-bottom:20px;
+            }
+            .footer-title~span{
+                display:block;
+                margin-bottom:15px;
+            }
+            aside span{
+                margin-right:5px;
+                font-size:20px;
+            }
+            .women-fashion{
+                background-image:url("public/images/women-fashion.jpg");
+                background-size:cover;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                opacity:0.5;
+            }
+            .men-fashion{
+            background-image:url("public/images/men-fashion.jpg");
+            background-size:cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            opacity:0.5;
+            }
+            .kids-fashion{
+                background-image:url("public/images/kids-fashion.jpg");
+                background-size:cover;
+                display:flex;
+                 justify-content:center;
+                 align-items:center;
+                 opacity:0.5;
+            }
+            .kids-fashion:hover{
+                opacity:1;
+            }
+            .womens-fashion:hover{
+                opacity:1;
+            }
+            .men-fashion:hover{
+                opacity:1;
+            }
+            main{
+                height:500px;
+                display:grid;
+                grid-template-columns:4fr 4fr 4fr;
+                grid-gap:4px;
+                margin-top:5px;
+            }
+            .card-title{
+                font-size:50px;
+                font-weight:bold;
+                color:white;
+                text-shadow:2px 2px 2px black;
+            }
+            button{
+                width:200px;
+                height:50px;
+                font-size:20px;
+                background-color:white;
+                border:none;
+                margin-top:150px;
+            }
+            </style>
+            </head>
+            <body>
+                <header>
+                    <div>
+                        <span class="brand-title">Shopper</span>
+                    </div>
+                    <div>
+                        <nav>
+                            <span>Home</span>
+                            <span>Catalog</span>
+                            <span>Shop</span>
+                            <span>Pages</span>
+                            <span>Blog</span>
+                            <span>Docs</span>          
+              </nav>
+                    </div>
+                    <div>
+                        <nav>
+                            <span class="bi bi-search"></span>
+                            <span class="bi bi-person"></span>
+                            <span class="bi bi-heart"></span>
+                            <span class="bi bi-cart3"><span class="cart-count">2</span></span>
+                        </nav>
+                    </div>
+                </header>
+                <artical>
+                    <span class="bi bi-lightning-fill"></span>
+                    <span>HAPPY HOLIDAY DEALS ON EVERTHING</span>
+                    <span class="bi bi-lightning-fill"></span>
+                </artical>
+                <section>
+                    <main>
+                        <div class="women-fashion">
+                            <div class="card">
+                                <div class="card-title">Womens</div>
+                            </div>
+                            <div class="card-footer">
+                                <button>Shop women<span class="bi bi-arrow-right"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="men-fashion">
+                        <div class="card">
+                            <div class="card-title">Men</div>
+                            <div class="card-footer">
+                                <button>Shop Men<span class="bi bi-arrow-right"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kids-fashion">
+                        <div class="card">
+                            <div class="card-title">Kids</div>
+                        </div>
+                        <div class="card-footer">
+                            <button>Shop Kids<span class="bi bi-arrow-right"></span></button>
+                        </div>
+                    </div>
+                    <div>
+                   </div>
+                    </main>
+                </section>
+                <footer>
+                    <div>
+                        <div class="footer-brand-name">Shopper</div>
+                        <aside>
+                            <span class="bi bi-facebook"></span>
+                            <span class="bi bi-twitter"></span>
+                            <span class="bi bi-instagram"></span>
+                            <span class="bi bi-linkedin"></span>
+                            <span class="bi bi-youtube"></span>
+                        </aside>
+                    </div>
+                    <div class="footer-title">SUPPORT</div>
+                    <span>Contact Us</span>
+                    <span>FAQs</span>
+                    <span>Size Guide</span>
+                    <span>Shipping & returns</span>
+                </div>
+                <div>
+                    <div class="footer-title">SHOP</div>
+                    <span>men's shopping</span>
+                    <span>women's shopping</span>
+                    <span>kids's shopping</span>
+                    <span>discounts</span>
+                </div>
+                <div>
+                    <div class="footer-title">COMPANY</div>
+                    <span>Our Story</span>
+                    <span>Careers</span>
+                    <span>Terms & Conditions</span>
+                    <span>Privacy & Cookie Policy</span>
+                </div>
+                <div class="footer-title">CONTACT</div>
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+                </footer>
+            </body>
+            </html>
